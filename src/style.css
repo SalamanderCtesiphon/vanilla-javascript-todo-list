@@ -16,6 +16,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 6vh;
+  width: 100vw;
+}
+
+.pageView {
+  height: 88vh;
+  width: 100vw;
+}
+
+.projectFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
   height: 6vh;
