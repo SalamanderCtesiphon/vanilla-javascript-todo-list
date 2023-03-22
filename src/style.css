@@ -38,3 +38,9 @@
   height: 6vh;
   width: 100vw;
 }
+
+.footer-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
