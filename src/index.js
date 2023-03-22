@@ -1,14 +1,9 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const content = document.getElementById('content');
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const header = document.createElement('h1');
+header.textContent = 'Project Manager';
+header.classList.add('projectHeader');
 
-  return element;
-}
-
-document.body.appendChild(component());
+content.appendChild(header);
