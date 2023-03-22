@@ -38,6 +38,12 @@
   width: 100vw;
 }
 
+.side-bar {
+  background-color: rgba(128, 128, 128, 0.638);
+  height: 88vh;
+  width: 25vw;
+}
+
 .projectFooter {
   display: flex;
   flex-direction: column;
