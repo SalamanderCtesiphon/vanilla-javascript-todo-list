@@ -1,5 +1,8 @@
 import './style.css';
 
+import { projectFactory } from './modules/projects';
+
+projectFactory();
 const content = document.getElementById('content');
 
 const header = document.createElement('h1');
