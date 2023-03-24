@@ -23,13 +23,18 @@ const createNewProj = () => {
 
     const newProject = projectFactory(title);
     projectArray.push(newProject);
-
-    console.log(projectArray);
-
-    console.log(newProject);
-    
-    
+    const pageView = document.querySelector('.pageView');
+    projectArray.forEach((project) => {
+      console.log(project.title);
+    const projectDiv = document.createElement('div');
+    const projectTitle = document.createElement('h3');
+    projectTitle.textContent = `${project.title}`;
+    projectDiv.appendChild(projectTitle);
+    pageView.appendChild(projectDiv);
   });
+  });
+
+  
  
   projTitleForm.classList.add('newProjForm');
   
@@ -40,6 +45,8 @@ const createNewProj = () => {
   projTitleForm.appendChild(projTitleInput);
   projTitleForm.appendChild(submitBtn);
   sideBar.appendChild(projTitleForm);
+
+  return projectArray;
 };
 
 export { createNewProj };

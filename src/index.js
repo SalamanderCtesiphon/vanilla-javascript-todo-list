@@ -1,9 +1,7 @@
 import './style.css';
-
-import { projectFactory } from './modules/projects';
 import { createNewProj } from './modules/createNewProj';
 
-projectFactory();
+
 const content = document.getElementById('content');
 
 const header = document.createElement('h1');
@@ -26,6 +24,7 @@ sideBar.appendChild(newProjBtn);
 
 
 
+
 const footer = document.createElement('div');
 footer.classList.add('projectFooter');
 const date = new Date().getFullYear();
@@ -42,6 +41,4 @@ pageView.appendChild(sideBar);
 content.appendChild(header);
 content.appendChild(pageView);
 content.appendChild(footer);
-const chores = projectFactory('Chores', 'Daily chores that I have to do in order to not be a nigger.', '12/7/1941', 'low');
-
 
