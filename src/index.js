@@ -1,6 +1,7 @@
 import './style.css';
 
 import { projectFactory } from './modules/projects';
+import { createNewProj } from './modules/createNewProj';
 
 projectFactory();
 const content = document.getElementById('content');
@@ -20,6 +21,7 @@ sideBar.classList.add('side-bar');
 const newProjBtn = document.createElement('div');
 newProjBtn.classList.add('newProjBtn');
 newProjBtn.textContent = 'Add a new project';
+newProjBtn.addEventListener('click', createNewProj);
 sideBar.appendChild(newProjBtn);
 
 
