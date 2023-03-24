@@ -73,6 +73,15 @@
 
 .display {
   width: 80vw;
+  padding: 5vh;
+  display: flex;
+}
+
+.projectDiv {
+  border: 1px solid black;
+  width: 10vw;
+  height: 20vh;
+  margin: 5vh;
 }
 
 .projectFooter {

@@ -26,6 +26,7 @@ const createNewProj = () => {
     const display = document.querySelector('.display');
     console.log(display);
     const projectDiv = document.createElement('div');
+    projectDiv.classList.add('projectDiv');
     const projectTitle = document.createElement('h3');
     projectArray.forEach((project) => {      
       projectTitle.textContent = `${project.title}`;
