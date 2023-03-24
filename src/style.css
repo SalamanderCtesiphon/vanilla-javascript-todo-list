@@ -61,6 +61,11 @@
   cursor: pointer;
 }
 
+.newProjForm {
+  display: flex;
+  flex-direction: column;
+}
+
 .projectFooter {
   display: flex;
   flex-direction: column;
