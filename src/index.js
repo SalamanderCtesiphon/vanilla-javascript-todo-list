@@ -33,3 +33,6 @@ pageView.appendChild(sideBar);
 content.appendChild(header);
 content.appendChild(pageView);
 content.appendChild(footer);
+const chores = projectFactory('Chores', 'Daily chores that I have to do in order to not be a nigger.', '12/7/1941', 'low');
+
+console.log(chores);
