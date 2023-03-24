@@ -8,6 +8,17 @@ const createNewProj = () => {
   const projTitleLabel = document.createElement('label');
   const projTitleInput = document.createElement('input');
   const submitBtn = document.createElement('button');
+
+  submitBtn.classList.add('newProjBtn');
+
+  submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    newProjBtn.style.display = 'flex';
+    projTitleForm.style.display = 'none';
+    
+    console.log(projTitleInput.value);
+    
+  });
  
   projTitleForm.classList.add('newProjForm');
   

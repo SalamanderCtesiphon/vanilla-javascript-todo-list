@@ -64,6 +64,10 @@
 .newProjForm {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  width: auto;
 }
 
 .projectFooter {
