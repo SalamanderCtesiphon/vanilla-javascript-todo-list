@@ -13,8 +13,15 @@ header.classList.add('projectHeader');
 const pageView = document.createElement('div');
 pageView.classList.add('pageView');
 
+
+
 const sideBar = document.createElement('div');
 sideBar.classList.add('side-bar');
+const newProjBtn = document.createElement('div');
+newProjBtn.classList.add('newProjBtn');
+newProjBtn.textContent = 'Add a new project';
+sideBar.appendChild(newProjBtn);
+
 
 
 const footer = document.createElement('div');
