@@ -1,3 +1,7 @@
+import { projectFactory } from "./projects";
+
+const projectArray = [];
+
 const createNewProj = () => {
   const newProjBtn = document.querySelector('.newProjBtn');
   newProjBtn.style.display = 'none';
@@ -15,8 +19,15 @@ const createNewProj = () => {
     e.preventDefault();
     newProjBtn.style.display = 'flex';
     projTitleForm.style.display = 'none';
+    const title = projTitleInput.value;
+
+    const newProject = projectFactory(title);
+    projectArray.push(newProject);
+
+    console.log(projectArray);
+
+    console.log(newProject);
     
-    console.log(projTitleInput.value);
     
   });
  
