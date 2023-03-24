@@ -36,6 +36,7 @@
 .pageView {
   height: 88vh;
   width: 100vw;
+  display: flex;
 }
 
 .side-bar {
@@ -68,6 +69,10 @@
   align-items: center;
   height: 20vh;
   width: auto;
+}
+
+.display {
+  background-color: red;
 }
 
 .projectFooter {

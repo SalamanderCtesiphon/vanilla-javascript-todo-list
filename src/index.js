@@ -12,7 +12,8 @@ header.classList.add('projectHeader');
 const pageView = document.createElement('div');
 pageView.classList.add('pageView');
 
-
+const display = document.createElement('div');
+display.classList.add('display');
 
 const sideBar = document.createElement('div');
 sideBar.classList.add('side-bar');
@@ -37,6 +38,7 @@ footer.classList.add('footer-link');
 
 
 pageView.appendChild(sideBar);
+pageView.appendChild(display);
 
 content.appendChild(header);
 content.appendChild(pageView);

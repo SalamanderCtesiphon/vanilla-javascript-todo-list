@@ -23,15 +23,14 @@ const createNewProj = () => {
 
     const newProject = projectFactory(title);
     projectArray.push(newProject);
-    const pageView = document.querySelector('.pageView');
+    const display = document.querySelector('.display');
+    console.log(display);
     const projectDiv = document.createElement('div');
     const projectTitle = document.createElement('h3');
-    projectArray.forEach((project) => {
-      console.log(project.title);
-      
+    projectArray.forEach((project) => {      
       projectTitle.textContent = `${project.title}`;
       projectDiv.appendChild(projectTitle);
-      pageView.appendChild(projectDiv);
+      display.appendChild(projectDiv);
   });
   });
 
@@ -46,6 +45,7 @@ const createNewProj = () => {
   projTitleForm.appendChild(projTitleInput);
   projTitleForm.appendChild(submitBtn);
   sideBar.appendChild(projTitleForm);
+
 
 };
 
