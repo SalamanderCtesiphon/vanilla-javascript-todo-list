@@ -31,7 +31,9 @@ const createNewProj = () => {
     projectArray.forEach((project) => {      
       projectTitle.textContent = `${project.title}`;
       
-      
+      addTodos.addEventListener('click', (e) => {
+        console.log(e);
+      })
       addTodos.classList.add('newProjBtn');
       addTodos.textContent = 'add todos';
       projectDiv.appendChild(projectTitle);
