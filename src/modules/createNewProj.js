@@ -16,6 +16,7 @@ const createNewProj = () => {
   submitBtn.classList.add('newProjBtn');
 
   submitBtn.addEventListener('click', (e) => {
+    console.log('hi');
     e.preventDefault();
     newProjBtn.style.display = 'flex';
     projTitleForm.style.display = 'none';
@@ -28,7 +29,6 @@ const createNewProj = () => {
     projectDiv.classList.add('projectDiv');
     const projectTitle = document.createElement('h3');
     const addTodos = document.createElement('button');
-    console.log('hi');
     projectArray.forEach((project) => {      
       projectTitle.textContent = `${project.title}`;
       
