@@ -17,7 +17,6 @@ const createNewProj = () => {
 
   submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('hi');
     newProjBtn.style.display = 'flex';
     projTitleForm.style.display = 'none';
     const title = projTitleInput.value;
