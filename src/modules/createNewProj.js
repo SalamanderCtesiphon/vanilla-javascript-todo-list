@@ -16,7 +16,6 @@ const createNewProj = () => {
   submitBtn.classList.add('newProjBtn');
 
   submitBtn.addEventListener('click', (e) => {
-    console.log('hi');
     e.preventDefault();
     newProjBtn.style.display = 'flex';
     projTitleForm.style.display = 'none';
