@@ -24,13 +24,19 @@ const createNewProj = () => {
     const newProject = projectFactory(title);
     projectArray.push(newProject);
     const display = document.querySelector('.display');
-    console.log(display);
     const projectDiv = document.createElement('div');
     projectDiv.classList.add('projectDiv');
     const projectTitle = document.createElement('h3');
+    const addTodos = document.createElement('button');
+    console.log('hi');
     projectArray.forEach((project) => {      
       projectTitle.textContent = `${project.title}`;
+      
+      
+      addTodos.classList.add('newProjBtn');
+      addTodos.textContent = 'add todos';
       projectDiv.appendChild(projectTitle);
+      projectDiv.appendChild(addTodos);
       display.appendChild(projectDiv);
   });
   });
