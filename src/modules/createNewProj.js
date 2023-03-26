@@ -23,6 +23,7 @@ const createNewProj = () => {
 
     const newProject = projectFactory(title);
     projectArray.push(newProject);
+    console.log(projectArray);
     const display = document.querySelector('.display');
     const projectDiv = document.createElement('div');
     projectDiv.classList.add('projectDiv');
@@ -32,7 +33,7 @@ const createNewProj = () => {
       projectTitle.textContent = `${project.title}`;
       
       addTodos.addEventListener('click', (e) => {
-        console.log(e);
+        
       })
       addTodos.classList.add('newProjBtn');
       addTodos.textContent = 'add todos';

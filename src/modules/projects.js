@@ -1,5 +1,6 @@
-const projectFactory = (title, description, dueDate, priority) => {
-  return { title, description, dueDate, priority };
+const projectFactory = (title, description, dueDate, priority, todoArray) => {
+  const todoArray = [];
+  return { title, description, dueDate, priority, todoArray };
 };
 
 
