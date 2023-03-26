@@ -23,7 +23,7 @@ const createNewProj = () => {
 
     const newProject = projectFactory(title);
     projectArray.push(newProject);
-    console.log(projectArray);
+    console.log(newProject);
     const display = document.querySelector('.display');
     const projectDiv = document.createElement('div');
     projectDiv.classList.add('projectDiv');
